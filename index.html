@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <title>Portífolio | Tainá Roberta</title>
+  </head>
+
+  <body>
+
+    <!-- Cortina -->
+    <div class="cortina">
+      <div class="left"></div>
+      <div class="right"></div>
+    </div>
+
+    <header>
+      <div class="header-wrapper">
+        <div class="logo-wrapper">
+          <span>Dev front end</span>
+        </div>
+
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="#home"> Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+          </ul>
+        </nav>
+
+        <button class="hamburguer" id="btnMenu">&#9776;</button>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- Hero Section -->
+      <section>
+        <div class="hero-section" id="home">
+          <div class="hero-text">
+            <h2 class="typing">Tainá Roberta</h2>
+            <p>Dev Front-end</p>
+            <a href="https://www.linkedin.com/in/tainá-robertha-2a5ab9282" title="LinkedIn de Tainá Roberta"><i class="ri-linkedin-fill"></i></a>
+            <a href="#" title="Instagram de Tainá Roberta"><i class="ri-instagram-line"></i></a>
+            <a href="https://github.com/structcodes" target="_blank" rel="noopener" title="GitHub de Tainá Roberta"><i class="ri-github-line"></i></a>
+          </div>
+
+          <div class="hero-image">
+            <img width="400" src="assets/img/web-development.png" alt="Foto">
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section>
+        <div class="about-wrapper">
+          <div class="about-image">
+            <img height="500" src="assets/img/perfil.png" alt="perfil">
+          </div>
+          <div class="about-content" id="sobre" data-aos="zoom-in-right">
+            <h3>Sobre</h3>
+            <p>
+              Olá! Meu nome é Thai e iniciei minha jornada na programação aos 17 anos, motivada pela curiosidade e paixão em criar soluções digitais. Atualmente, curso Análise e Desenvolvimento de Sistemas, aprofundando meus conhecimentos em front-end, back-end, lógica de programação e boas práticas de desenvolvimento. <br> <br>
+              Tenho experiência prática com HTML, CSS, JavaScript, PHP e Bootstrap, desenvolvendo projetos que vão desde sites responsivos até sistemas completos. Busco transformar problemas reais em soluções funcionais, priorizando usabilidade, desempenho e experiência do usuário. Meu objetivo é evoluir constantemente como desenvolvedora, unindo criatividade, lógica e técnica para entregar produtos digitais de qualidade.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="skills-section">
+        <div class="skills-wrapper">
+          <h3 class="section-title">Hard Skills</h3>
+          <h3 class="section-2">Minhas Habilidades</h3>
+          <div class="skills-slider">
+            <div class="slider-track">
+              <!-- CONJUNTO 1 -->
+              <img src="assets/img/Logo HTML5 em Cores Vibrantes.png" alt="HTML5" class="slide">
+              <img src="assets/img/Logo do Python em Vector.png" alt="Python" class="slide">
+              <img src="assets/img/Logo Vector PHP Moderno.png" alt="PHP" class="slide">
+              <img src="assets/img/Logo do MySQL com golfinho.png" alt="MySQL" class="slide">
+
+              <!-- CONJUNTO 2 (DUPLICADO) -->
+              <img src="assets/img/Logo HTML5 em Cores Vibrantes.png" alt="HTML5" class="slide">
+              <img src="assets/img/Logo do Python em Vector.png" alt="Python" class="slide">
+              <img src="assets/img/Logo Vector PHP Moderno.png" alt="PHP" class="slide">
+              <img src="assets/img/Logo do MySQL com golfinho.png" alt="MySQL" class="slide">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="projects-section" id="projetos">
+        <h3 class="section-title2">Projetos</h3>
+        <h3 class="section-2">Últimos Projetos</h3>
+        <div class="projects-wrapper">
+
+          <div class="project-card">
+            <img src="assets/img/personal1.png" alt="Site personal trainer" class="card-img">
+            <h3>Site personal trainer</h3>
+            <p>Design moderno que valoriza serviços, planos e contato com clientes.</p>
+            <a href="https://structcodes.github.io/site-personal-trainer/" target="_blank" rel="noopener"><button>Demo →</button></a>
+          </div>
+
+          <div class="project-card">
+            <img src="assets/img/frontend.png" alt="Site digital bank" class="card-img">
+            <h3>Digital Bank</h3>
+            <p>Projeto Frontend Mentor — Desafio prático para aprimorar habilidades em HTML, CSS e design responsivo.</p>
+            <a href="https://structcodes.github.io/Digitalbank-landing-page/" target="_blank" rel="noopener"><button>Demo →</button></a>
+          </div>
+
+          <div class="project-card">
+            <img src="assets/img/babearia.png" alt="Site Barbearia" class="card-img">
+            <h3>Barbearia</h3>
+            <p>Interface limpa e moderna, destacando atendimento e serviços.</p>
+            <a href="https://structcodes.github.io/landingpage-barbearia/" target="_blank" rel="noopener"><button>Demo →</button></a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section>
+        <div class="services-section">
+          <h3 class="section-title">Serviços</h3>
+          <div class="services-wrapper" id="servicos">
+
+            <div class="service-card">
+              <i class="ri-terminal-window-line"></i>
+              <h4>Desenvolvimento web</h4>
+              <p>Sites institucionais para empresas ou profissionais ,landing pages para captura de leads ou promoções e sites responsivos(mobile-friendly).</p>
+            </div>
+
+            <div class="service-card">
+              <i class="ri-tools-fill"></i>
+              <h4>Manutenção de Código</h4>
+              <p>Customização de Templates , Ajustar cores, fontes, layout e responsividade.</p>
+            </div>
+
+            <div class="service-card">
+              <i class="ri-seo-fill"></i>
+              <h4>Otimização e Performance</h4>
+              <p>Tornar sites mais rápidos e leves (otimização de imagens, CSS/JS). Ajustes de SEO básico no HTML (meta tags, headings).</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>Desenvolvido por Tainá Roberta</p>
+      <div class="social-icons">
+        <a href="https://github.com/structcodes" title="GitHub de Thai Roberta"><i class="ri-github-fill"></i></a>
+        <a href="https://www.linkedin.com/in/tainá-robertha-2a5ab9282" title="LinkedIn de Tainá Roberta"><i class="ri-linkedin-box-fill"></i></a>
+        <a href="#" title="Instagram de Tainá Roberta"><i class="ri-instagram-line"></i></a>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="script.js"></script>
+
+  </body>
+</html>
