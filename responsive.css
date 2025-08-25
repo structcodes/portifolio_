@@ -1,3 +1,4 @@
+
 .hamburguer {
     display: none;
     font-size: 2rem;
@@ -6,86 +7,129 @@
     color: white;
     cursor: pointer;
   }
-@media(max-width: 768px) {
-  
-  .about-wrapper,
-  .projects-wrapper,
-  .services-wrapper{
-    flex-direction: column;
-  }
 
+
+/* ================= RESPONSIVIDADE ================= */
+
+/* Tablets até 1024px */
+@media (max-width: 1024px) {
   .hero-section {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 40px 20px;
   }
 
-  .hero-text {
-    font-size: 2rem;
-    line-height: 50px;
+  .hero-image img {
+    max-width: 80%;
+    height: auto;
+    margin-top: 20px;
   }
 
-  .hero-image  img{
-    width: 100%;
-    max-width: 400px;
-
+  .about-wrapper {
+    flex-direction: column;
+    text-align: center;
   }
 
   .about-content {
     width: 100%;
+    margin: 20px 0;
   }
 
-  .about-content > h3 {
-    font-weight: 400;
-    border-bottom: 2px solid rgb(166, 230, 238);
-    display: inline-block;
-    padding-bottom: 5px;
+  .projects-wrapper {
+    flex-wrap: wrap;
   }
 
-  .section-title {
-    font-weight: 300;
-    font-size: 1rem;
-    margin-bottom: 20px;
+  .services-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
   }
-
-  .section-title2 {
-    margin-bottom: 20px;
-    text-align: center;
-    font-weight: 400;
-    color: rgb(224, 179, 63);
-  }
-
-  .section-2 {
-    color: white;
-    line-height: 5px;
-    font-size: 1.3rem;
-    text-align: center;
-   
-  }
-
-  span {
-  color: #dceaff;
-  font-weight: 500;
-  font-size: 1rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-  /* menu hambueguer */
-  .nav-menu ul {
+/* Celulares até 768px */
+@media (max-width: 768px) {
+  /* Menu mobile */
+  .nav-menu {
     display: none;
-    flex-direction: column;
-    background-color: rgb(32, 30, 30);
-    color: beige;
     position: absolute;
-    top: 60px;
-    right: 20px;
-    padding: 1rem;
-    z-index: 99;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background-color: #1E0E2B;
+    text-align: center;
+    padding: 20px 0;
   }
 
-  .nav-menu ul.active {
+  .nav-menu ul {
     display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 
   .hamburguer {
     display: block;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .nav-menu.active {
+  display: block;
+}
+
+.skills-slider {
+  overflow: hidden;
+}
+
+  /* Ajustes gerais */
+  .hero-text {
+    font-size: 1.8rem;
+    line-height: 35px;
+  }
+
+  .project-card {
+    width: 90%;
+    margin: 15px auto;
+  }
+
+  .service-card {
+    max-width: 90%;
+    height: auto;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
+
+/* Celulares pequenos até 480px */
+@media (max-width: 480px) {
+  .hero-text {
+    font-size: 1.4rem;
+    line-height: 28px;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+  }
+
+  .about-content > h3 {
+    font-size: 1.5rem;
+  }
+
+  .section-title,
+  .section-title2,
+  .section-2 {
+    font-size: 0.9rem;
+  }
+
+  .service-card {
+    padding: 15px;
+  }
+
+  .social-icons a {
+    font-size: 18px;
   }
 }

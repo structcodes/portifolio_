@@ -1,6 +1,6 @@
 // Menu Hamburguer
 const btnMenu = document.getElementById('btnMenu');
- const navList = document.querySelector('.nav-menu ul');
+ const navList = document.querySelector('.nav-menu');
 
  btnMenu.addEventListener('click', () => {
    navList.classList.toggle('active');
