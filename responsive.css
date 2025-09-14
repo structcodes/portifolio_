@@ -43,7 +43,10 @@
   .services-wrapper {
     flex-wrap: wrap;
     justify-content: center;
-  }
+    display: flex;
+   }
+
+
 }
 
 /* Celulares até 768px */
@@ -87,7 +90,11 @@
   /* Ajustes gerais */
   .hero-text {
     font-size: 1.8rem;
-    line-height: 35px;
+  }
+
+  .hero-text > p {
+    text-transform: uppercase;
+    line-height: 2.3rem;
   }
 
   .project-card {
@@ -135,8 +142,15 @@
     line-height: 28px;
   }
 
-  .hero-image img {
-    max-width: 100%;
+  .hero-image > img {
+    /* max-width: 100%; */
+    display: none;
+  }
+
+  .about-image > img {
+    margin: -4rem;
+    width: 96%;
+    object-fit: cover;
   }
 
   .about-content > h3 {
@@ -150,8 +164,9 @@
   }
 
   .services-section > .title-section {
-    font-size: 1rem;
-    text-transform: uppercase;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    margin-top: 3rem;
   
   }
 
