@@ -78,7 +78,7 @@ a {
   color: white;
 }
 
-.cortina {
+/* .cortina {
   position: fixed;
   top: 0;
   left: 0;
@@ -92,10 +92,10 @@ a {
   flex: 1;
   background: #000; 
   transform: translateX(0);
-   }
+   }  */
 
 /* Animação da esquerda */
-.cortina .left {
+/* .cortina .left {
   animation: abrirEsquerda 1.5s forwards;
   }
 
@@ -103,10 +103,10 @@ a {
   to {
   transform: translateX(-100%);
      }
-  }
+  } */
 
 /* Animação da direita */
-.cortina .right {
+/* .cortina .right {
   animation: abrirDireita 1.5s forwards;
   animation-delay: 0.2s;
 }
@@ -115,13 +115,13 @@ a {
   to {
   transform: translateX(100%);
     }
-  }
+  } */
 
 /* Esconde o conteúdo até a cortina abrir */
-header, main {
+/* header, main {
   opacity: 0;
   transition: opacity 1s ease-in-out;
-      }
+      } */
 
 span {
   color: #dceaff;
